@@ -23,10 +23,10 @@ navbar-links:
   Publications: "https://www.researchgate.net/profile/Xin-Zhou-57/research"
     # - Publications: 
     # - My page at CUIT: "https://www.markdowntutorial.com/"
-  Projects: "aboutprojects"
+  #Projects: "aboutprojects"
   Group: "aboutgroup"
   Blog: "_posts/"
-  Official: "https://cas.cuit.edu.cn/info/1046/3120.htm"
+  Official: "https://cas.cuit.edu.cn/info/1018/1946.htm"
 
 ################
 # --- Logo --- #
