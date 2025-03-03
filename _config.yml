@@ -24,8 +24,8 @@ navbar-links:
     # - Publications: 
     # - My page at CUIT: "https://www.markdowntutorial.com/"
   #Projects: "aboutprojects"
-  Group: "aboutgroup"
-  Blog: "_posts/"
+  #Group: "aboutgroup"
+  #Blog: "_posts/"
   Official: "https://cas.cuit.edu.cn/info/1018/1946.htm"
 
 ################
