@@ -1,0 +1,145 @@
+---
+common-ext-css:
+  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+common-css:
+  - "/assets/css/beautifuljekyll.css"
+  - "/assets/css/custom-academic.css"
+common-ext-js:
+  - href: "https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    sri: "sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  - href: "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    sri: "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    sri: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+common-js:
+  - "/assets/js/beautifuljekyll.js"
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+<!-- Academic Layout | Built on Beautiful Jekyll -->
+{% include head.html %}
+
+<body class="academic-layout">
+
+  <!-- ===== TOP MASTHEAD ===== -->
+  <div class="acad-masthead">
+    <div class="acad-masthead-inner">
+      <a class="acad-masthead-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+      <button class="acad-nav-toggle" id="acad-nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="acad-nav" id="acad-nav">
+        <a href="{{ '/XinZhou_CV_May2025.pdf' | relative_url }}">CV</a>
+        <a href="https://www.researchgate.net/profile/Xin-Zhou-57/research" target="_blank" rel="noopener">Publications</a>
+        <a href="https://cas.cuit.edu.cn/info/1018/1946.htm" target="_blank" rel="noopener">Official Page</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== TWO-COLUMN WRAPPER ===== -->
+  <div class="acad-wrapper">
+
+    <!-- === LEFT SIDEBAR === -->
+    <aside class="acad-sidebar">
+      <img
+        class="author-avatar"
+        src="{{ site.avatar | relative_url }}"
+        alt="{{ site.author }}"
+      />
+      <div class="author-name">{{ site.author }}</div>
+      <div class="author-pronoun">she/her</div>
+      <div class="author-title">Researcher</div>
+      <div class="author-institution">
+        Chengdu University of<br>Information Technology
+      </div>
+
+      <hr class="author-divider" />
+
+      <ul class="contact-list">
+        {% if site.social-network-links.email %}
+        <li>
+          <i class="fas fa-fw fa-envelope"></i>
+          <a href="mailto:{{ site.social-network-links.email }}">
+            {{ site.social-network-links.email }}
+          </a>
+        </li>
+        {% endif %}
+
+        <li>
+          <i class="fas fa-fw fa-map-marker-alt"></i>
+          <span>Chengdu, China</span>
+        </li>
+
+        {% if site.social-network-links.github %}
+        <li>
+          <i class="fab fa-fw fa-github"></i>
+          <a href="https://github.com/{{ site.social-network-links.github }}" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </li>
+        {% endif %}
+
+        {% if site.social-network-links.twitter %}
+        <li>
+          <i class="fab fa-fw fa-twitter"></i>
+          <a href="https://twitter.com/{{ site.social-network-links.twitter }}" target="_blank" rel="noopener">
+            @{{ site.social-network-links.twitter }}
+          </a>
+        </li>
+        {% endif %}
+
+        {% if site.social-network-links.ORCID %}
+        <li>
+          <i class="fas fa-fw fa-id-badge"></i>
+          <a href="{{ site.social-network-links.ORCID }}" target="_blank" rel="noopener">
+            ORCID
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+
+      <hr class="author-divider" />
+
+      <div class="sidebar-nav">
+        <a href="{{ '/#about' | relative_url }}">About</a>
+        <a href="{{ '/#research' | relative_url }}">Research</a>
+        <a href="{{ '/#publications' | relative_url }}">Publications</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      </div>
+    </aside>
+
+    <!-- === MAIN CONTENT === -->
+    <main class="acad-main">
+      {{ content }}
+
+      <footer class="acad-footer">
+        <p>
+          &copy; {{ site.time | date: "%Y" }} {{ site.author }} &mdash;
+          Built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+          &amp; <a href="https://beautifuljekyll.com" target="_blank" rel="noopener">Beautiful Jekyll</a>
+        </p>
+      </footer>
+    </main>
+
+  </div><!-- /.acad-wrapper -->
+
+  {% include footer-scripts.html %}
+
+  <!-- Mobile nav toggle -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('acad-nav-toggle');
+      var nav = document.getElementById('acad-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          nav.classList.toggle('is-open');
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
