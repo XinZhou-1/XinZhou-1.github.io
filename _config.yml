@@ -19,13 +19,13 @@ author: Xin Zhou
 # --- List of links in the navigation bar --- #
 ###############################################
 navbar-links:
-  CV: "XinZhou_CV_May2025.pdf"
+  # CV: "XinZhou_CV_May2025.pdf"
   Publications: "https://www.researchgate.net/profile/Xin-Zhou-57/research"
     # - Publications: 
     # - My page at CUIT: "https://www.markdowntutorial.com/"
   #Projects: "aboutprojects"
   #Group: "aboutgroup"
-  Blog: "_posts/"
+  Posts: "_posts/"
   Official: "https://cas.cuit.edu.cn/info/1018/1946.htm"
 
 ################
