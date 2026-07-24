@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-subtitle: Dr. Xin Zhou — Researcher at CUIT
+subtitle: Dr. Xin Zhou — Associate Processor at CUIT
 ---
 
 I am a researcher at the [Chengdu University of Information Technology (CUIT)](https://cas.cuit.edu.cn/info/1018/1946.htm) in Chengdu, China. My research focuses on computational methods and data-driven approaches for engineering problems, including heat transfer modeling, hydrological prediction, and applied machine learning.
