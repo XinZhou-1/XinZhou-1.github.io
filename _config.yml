@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Xin Zhou's Website
+title: Dr Xin Zhou
 
 # Your name to show in the footer
 author: Xin Zhou
@@ -25,7 +25,7 @@ navbar-links:
     # - My page at CUIT: "https://www.markdowntutorial.com/"
   #Projects: "aboutprojects"
   #Group: "aboutgroup"
-  #Blog: "_posts/"
+  Blog: "_posts/"
   Official: "https://cas.cuit.edu.cn/info/1018/1946.htm"
 
 ################
