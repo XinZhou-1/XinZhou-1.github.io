@@ -15,6 +15,7 @@ You can download my CV [here](/XinZhou_CV_May2025.pdf), view my publications on 
 - Atmospheric impacts of Volcanic eruption
 - Risks & benifits of Stratospheric Aerosol Injection
 - Age of stratospheric air and long-lived trace gases
+- Modelling of QBO
 
 ## Contact
 
